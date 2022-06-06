@@ -12,8 +12,7 @@ public abstract class Vehicle {
     private int price;
     private Engine engine;
 
-    public Vehicle() {
-    }
+
 
     public Vehicle(Colors color, String name,String className, int fuelCapacity,int fuel, int price, Engine engine) {
         this.color = color;
@@ -26,7 +25,13 @@ public abstract class Vehicle {
     }
 
 
-
+    public void buyVehicle(){
+        System.out.println("Vehicle " +name+ " has been bought for " +price+ ".");
+        sellVehicle();
+    }
+    public void sellVehicle(){
+        System.out.println("Vehicle " +name+ " has been sold for " +price+ ".");
+    }
     public Colors getColor() {
         return color;
     }

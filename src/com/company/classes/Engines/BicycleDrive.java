@@ -1,7 +1,10 @@
 package com.company.classes.Engines;
 
-public class CombustionEngine extends Engine implements com.company.classes.interfaces.Engine {
-    public CombustionEngine(String name, int engineCapacity, int maxVelocity, int maxHeight) {
+import com.company.Enums.Colors;
+import com.company.classes.Engines.Engine;
+
+public class BicycleDrive extends Engine{
+    public BicycleDrive(String name, int engineCapacity, int maxVelocity, int maxHeight) {
         super(name, engineCapacity, maxVelocity, maxHeight);
     }
 

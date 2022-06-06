@@ -6,8 +6,7 @@ public abstract class Engine {
     private int maxVelocity;
     private int maxHeight;
 
-    public Engine() {
-    }
+
 
     public Engine(String name, int engineCapacity, int maxVelocity, int maxHeight) {
         this.name = name;

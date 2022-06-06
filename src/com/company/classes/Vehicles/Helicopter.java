@@ -1,6 +1,15 @@
 package com.company.classes.Vehicles;
 
-public class Helicopter extends Vehicle{
+import com.company.Enums.Colors;
+import com.company.classes.Engines.Engine;
+import com.company.classes.interfaces.Air;
+import com.company.classes.interfaces.Fuel;
+
+public class Helicopter extends Vehicle implements Air, Fuel {
+    public Helicopter(Colors color, String name, String className, int fuelCapacity, int fuel, int price, Engine engine) {
+        super(color, name, className, fuelCapacity, fuel, price, engine);
+    }
+
     public void writeClassName(){
         System.out.println(super.getClassName());
     }
